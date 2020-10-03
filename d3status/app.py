@@ -73,6 +73,8 @@ class Application(web.Application):
             match = spec.regex.match(request.path)
             if match:
                 return spec.name
+            else:
+                return None
 
         return None
 
